@@ -7,27 +7,27 @@ import Link from "next/link";
 
 const PROJECTS = [
   {
-    title: "E-Commerce Architecture",
-    description: "A high-performance headless commerce storefront built with Next.js App Router, React Server Components, and Shopify Storefront API. Achieved perfect Lighthouse scores.",
-    tech: ["Next.js", "TypeScript", "Shopify API", "Vanilla CSS"],
-    link: "#",
-    github: "#",
+    title: "Toko Keren",
+    description: "A high-performance headless commerce storefront built with Laravel, PHP, MySQL, and Tailwind CSS.",
+    tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
+    link: "https://github.com/brah4729/tokokeren",
+    github: "https://github.com/brah4729/tokokeren",
     color: "linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(5, 150, 105, 0.4) 100%)"
   },
   {
-    title: "Real-time Analytics Dashboard",
-    description: "Financial dashboard processing millions of rows using WebSockets, WebGL for rendering charts, and optimistic UI updates for zero-latency feel.",
-    tech: ["React", "WebGL", "Socket.io", "Zustand"],
-    link: "#",
-    github: "#",
+    title: "mono OS",
+    description: "A operating system built from scratch using C, C++, and Assembly.",
+    tech: ["C", "C++", "Assembly", "Makefile"],
+    link: "https://github.com/brah4729/mono-OS",
+    github: "https://github.com/brah4729/mono-OS",
     color: "linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(37, 99, 235, 0.4) 100%)"
   },
   {
-    title: "Design System Library",
-    description: "An accessible, fully typed component library used across 10+ enterprise applications. 100% test coverage and strict WCAG compliance.",
-    tech: ["React", "Storybook", "Radix UI", "Framer Motion"],
-    link: "#",
-    github: "#",
+    title: "cli assistant",
+    description: "A command line assistant that can help you with your daily tasks.",
+    tech: ["Python", "pytorch", "Nix"],
+    link: "https://github.com/brah4729/cli-assistant",
+    github: "https://github.com/brah4729/cli-assistant",
     color: "linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(124, 58, 237, 0.4) 100%)"
   }
 ];
@@ -36,7 +36,7 @@ export function Projects() {
   return (
     <section id="projects" className={styles.section}>
       <div className="container">
-        <h2 className={styles.heading}>Selected <span style={{ color: 'var(--text-secondary)' }}>Works</span></h2>
+        <h2 className={styles.heading}>Recent <span style={{ color: 'var(--text-secondary)' }}>Projects</span></h2>
         
         <div className={styles.grid}>
           {PROJECTS.map((project, index) => (

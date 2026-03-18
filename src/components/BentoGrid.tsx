@@ -37,8 +37,7 @@ export function BentoGrid() {
             <div className={styles.iconWrapper}><Users size={24} /></div>
             <h3 className={styles.cardTitle}>Mindset & Approach</h3>
             <p className={styles.cardText}>
-              A decade of experience building scalable, accessible, and highly performant web applications. 
-              I obsess over the details—from pixel-perfect CSS to the underlying systems architecture that powers the UI.
+            I am a Developer who is obsessed with building cool applications , solving problems and exploring new things 
             </p>
           </motion.div>
 
@@ -63,7 +62,7 @@ export function BentoGrid() {
             <div className={styles.iconWrapper}><Zap size={24} /></div>
             <h3 className={styles.cardTitle}>Performance First</h3>
             <p className={styles.cardText}>
-              Deep understanding of the browser rendering pipeline, Core Web Vitals, and strict rendering strategies to achieve 100/100 Lighthouse scores.
+              Focused on making applications that are fast, efficient, lightweight,easy to read and debug, and user-friendly
             </p>
           </motion.div>
 

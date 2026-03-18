@@ -9,7 +9,7 @@ export function Footer() {
       fontSize: '0.9rem'
     }}>
       <div className="container">
-        <p>© {new Date().getFullYear()} Frontend Engineer. Engineered with precise detail.</p>
+        <p>© {new Date().getFullYear()} created by <a href="https://github.com/brah4729">e</a></p>
       </div>
     </footer>
   );
