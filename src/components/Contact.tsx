@@ -21,19 +21,17 @@ export function Contact() {
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text'
-          }}>extraordinary?</span></h2>
+          }}>interesting?</span></h2>
           <p className={styles.text}>
-            I&apos;m currently open for new opportunities. Whether you have a question or just want to discuss web architecture, I&apos;ll try my best to get back to you.
+            I&apos;m currently open for talk . Whether you have a question or just want to discuss anything related to techs , I&apos;ll try my best to get back to you.
           </p>
           
-          <a href="mailto:hello@example.com" className={styles.primaryBtn}>
+          <a href="mailto:helloxdlolidc@gmail.com" className={styles.primaryBtn}>
             <Mail size={18} /> Say Hello
           </a>
           
           <div className={styles.socials}>
-            <Link href="https://github.com" aria-label="GitHub"><Github size={24} /></Link>
-            <Link href="https://linkedin.com" aria-label="LinkedIn"><Linkedin size={24} /></Link>
-            <Link href="https://twitter.com" aria-label="Twitter"><Twitter size={24} /></Link>
+            <Link href="https://github.com/brah4729" aria-label="GitHub"><Github size={24} /></Link>
           </div>
         </motion.div>
       </div>
