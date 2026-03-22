@@ -70,6 +70,16 @@
   justify-content: center;
   transition: opacity 0.3s ease;
   backdrop-filter: blur(4px);
+  z-index: 10;
+}
+
+.projectImage {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.imageContainer:hover .projectImage {
+  transform: scale(1.05);
 }
 
 .imageContainer:hover .overlay {

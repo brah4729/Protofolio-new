@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import styles from "./Projects.module.css";
 import { ArrowUpRight, Github } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import { image } from "framer-motion/client";
 
 const PROJECTS = [
   {
@@ -12,7 +14,8 @@ const PROJECTS = [
     tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
     link: "https://github.com/brah4729/tokokeren",
     github: "https://github.com/brah4729/tokokeren",
-    color: "linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(5, 150, 105, 0.4) 100%)"
+    color: "linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(5, 150, 105, 0.4) 100%)",
+    image: "/tokokeren.png"
   },
   {
     title: "mono OS",
@@ -20,7 +23,8 @@ const PROJECTS = [
     tech: ["C", "C++", "Assembly", "Makefile"],
     link: "https://github.com/brah4729/mono-OS",
     github: "https://github.com/brah4729/mono-OS",
-    color: "linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(37, 99, 235, 0.4) 100%)"
+    color: "linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(37, 99, 235, 0.4) 100%)",
+    image: "/monoos.png"
   },
   {
     title: "cli assistant",
@@ -49,6 +53,14 @@ export function Projects() {
               className={styles.card}
             >
               <div className={styles.imageContainer} style={{ background: project.color }}>
+                 {project.image && (
+                   <Image
+                     src={project.image}
+                     alt={project.title}
+                     fill
+                     className={styles.projectImage}
+                   />
+                 )}
                  <div className={styles.overlay}>
                     <Link href={project.link} className={styles.previewBtn}>
                       View Live <ArrowUpRight size={16} />
