@@ -16,14 +16,14 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Alex — Portfolio",
+  title: "Dhiren — Portfolio",
   description:
     "A Student specializing in Machine Learning and Web Development that focuses on user experience, comfort, performance and scalability.",
   openGraph: {
-    title: "Alex — Portfolio",
+    title: "Dhiren — Portfolio",
     description:
       "A Student specializing in Machine Learning and Web Development that focuses on user experience, comfort, performance and scalability.",
-    siteName: "Alex Portfolio",
+    siteName: "Dhiren's Portfolio",
     locale: "en_US",
     type: "website",
   },

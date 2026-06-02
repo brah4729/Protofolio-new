@@ -5,12 +5,12 @@ export function Footer() {
     <footer className={styles.footer}>
       <div className={`${styles.inner} container`}>
         <a href="#" className={styles.logo}>
-          ALEX
+          Dhiren
         </a>
 
         <nav className={styles.links} aria-label="Footer navigation">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/brah4729"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
@@ -23,7 +23,7 @@ export function Footer() {
           </a>
         </nav>
 
-        <p className={styles.copy}>© 2024 ALEX. ALL RIGHTS RESERVED.</p>
+        <p className={styles.copy}>© 2024 Dhiren. ALL RIGHTS RESERVED.</p>
       </div>
     </footer>
   );

@@ -4,7 +4,7 @@ import { useState, FormEvent } from "react";
 import styles from "./Contact.module.css";
 
 export function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({ name: "Dhiren", email: "helloxdlolidc@gmail.com", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
 
   const handleSubmit = (e: FormEvent) => {
@@ -14,7 +14,7 @@ export function Contact() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
     );
-    window.open(`mailto:your@email.com?subject=${subject}&body=${body}`);
+    window.open(`mailto:helloxdlolidc@gmail.com?subject=${subject}&body=${body}`);
     setTimeout(() => {
       setStatus("sent");
       setForm({ name: "", email: "", message: "" });
