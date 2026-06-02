@@ -50,13 +50,13 @@ export function Contact() {
               on GitHub.
             </p>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/brah4729"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.ghBtn}
               id="github-link"
             >
-              github.com/yourusername <span className={styles.arrow}>→</span>
+              github.com/brah4729<span className={styles.arrow}>→</span>
             </a>
           </div>
 
@@ -74,7 +74,7 @@ export function Contact() {
                 <input
                   id="contact-name"
                   type="text"
-                  placeholder="Your name"
+                  placeholder="Dhiren"
                   className={styles.input}
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -88,7 +88,7 @@ export function Contact() {
                 <input
                   id="contact-email"
                   type="email"
-                  placeholder="your@email.com"
+                  placeholder="helloxdlolidc@gmail.com"
                   className={styles.input}
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
