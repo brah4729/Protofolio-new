@@ -11,7 +11,7 @@ export function Hero() {
         </div>
 
         <h1 className={styles.heading}>
-          HI, I AM <span className={styles.accent}>ALEX.</span>
+          HI, I AM <span className={styles.accent}>Dhiren</span>
         </h1>
 
         <p className={styles.bio}>
