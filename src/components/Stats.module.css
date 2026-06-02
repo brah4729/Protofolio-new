@@ -1,0 +1,72 @@
+.section {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 2.75rem 0;
+  border-right: 1px solid var(--border-color);
+}
+
+.item:last-child {
+  border-right: none;
+}
+
+.value {
+  font-family: var(--font-display);
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.label {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--text-secondary);
+}
+
+/* ── Mobile: stacked cards with amber numbers ── */
+@media (max-width: 768px) {
+  .section {
+    padding: 2rem 0;
+    border-bottom: none;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .item {
+    border-right: none;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    padding: 2rem 1.5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item:last-child {
+    border-right: none;
+  }
+
+  .value {
+    font-size: 3.5rem;
+    color: var(--accent-color);
+  }
+
+  .label {
+    font-size: 0.72rem;
+  }
+}

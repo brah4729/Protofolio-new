@@ -1,15 +1,21 @@
+import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { BentoGrid } from "@/components/BentoGrid";
-import { Projects } from "@/components/Projects";
+import { Stats } from "@/components/Stats";
+import { Explore } from "@/components/Explore";
 import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <BentoGrid />
-      <Projects />
-      <Contact />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Stats />
+        <Explore />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }

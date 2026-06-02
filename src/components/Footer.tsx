@@ -1,15 +1,29 @@
+import styles from "./Footer.module.css";
+
 export function Footer() {
   return (
-    <footer style={{
-      padding: '4rem 0',
-      textAlign: 'center',
-      color: 'var(--text-secondary)',
-      borderTop: '1px solid var(--border-color)',
-      marginTop: '8rem',
-      fontSize: '0.9rem'
-    }}>
-      <div className="container">
-        <p>© {new Date().getFullYear()} created by <a href="https://github.com/brah4729">e</a></p>
+    <footer className={styles.footer}>
+      <div className={`${styles.inner} container`}>
+        <a href="#" className={styles.logo}>
+          ALEX
+        </a>
+
+        <nav className={styles.links} aria-label="Footer navigation">
+          <a
+            href="https://github.com/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+            id="footer-github"
+          >
+            GITHUB
+          </a>
+          <a href="#contact" className={styles.link} id="footer-contact">
+            CONTACT
+          </a>
+        </nav>
+
+        <p className={styles.copy}>© 2024 ALEX. ALL RIGHTS RESERVED.</p>
       </div>
     </footer>
   );
